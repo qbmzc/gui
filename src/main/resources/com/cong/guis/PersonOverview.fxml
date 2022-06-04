@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cong.guis.PersonOverviewController">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="backgroud" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cong.guis.PersonOverviewController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" layoutX="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -23,7 +23,7 @@
                   </TableView>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background" stylesheets="@DarkTheme.css">
                <children>
                   <Label layoutX="27.0" layoutY="22.0" text="Person Details" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
                   <GridPane layoutX="14.0" layoutY="28.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
@@ -56,8 +56,8 @@
                   </GridPane>
                   <HBox layoutX="215.0" layoutY="340.0" spacing="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                      <children>
-                        <Button layoutX="215.0" layoutY="340.0" mnemonicParsing="false" text="New" />
-                        <Button layoutX="283.0" layoutY="340.0" mnemonicParsing="false" text="Edit" />
+                        <Button layoutX="215.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleNewPerson" text="New" />
+                        <Button layoutX="283.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleEditPerson" text="Edit" />
                         <Button layoutX="340.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete" />
                      </children>
                   </HBox>
